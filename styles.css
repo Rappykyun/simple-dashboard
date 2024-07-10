@@ -6,7 +6,7 @@
     --main-bg: #fff0f5;
     --main-text-color: #333333;
     --card-bg: #ffffff;
-    --button-bg: #ff69b4;
+    --button-bg: rgb(255, 105, 180);
     --button-text-color: #ffffff;
 }
 
@@ -57,12 +57,26 @@ nav li {
     margin-bottom: 20px;
     cursor: pointer;
     font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--navbar-text-color);
+    margin-left: 12px;
 }
 
 nav li img {
     width: 24px;
     height: 24px;
     margin-right: 10px;
+}
+
+nav li:hover {
+    background-color: var(--button-bg);
+    border-radius: 20px;
+    color: var(--button-text-color);
+    padding: 5px;
+    transition: all 0.3s ease;
+
+
 }
 
 header {
@@ -176,6 +190,29 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.announcement-card p {
+    margin-bottom: 10px;
+}
+
+.announcement-card h4 {
+    margin-bottom: 10px;
+}
+
+.announcement-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.announcement-card a {
+    display: inline-block;
+    background-color: var(--button-bg);
+    color: var(--button-text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
 .trending-item {
     display: flex;
     align-items: center;
